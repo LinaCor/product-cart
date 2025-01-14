@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'Red Hat Text-regular';
+  src: url('../src/fonts/RedHatText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Red Hat Text-SemiBold';
+  src: url('../src/fonts/RedHatText-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Red Hat Text-Bold';
+  src: url('../src/fonts/RedHatText-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-style: 100%;
+  line-height: 1;
+  font-style: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+:root {
+  --accent-color: hsl(14, 86%, 42%);
+  --accent-hover: hsl(14, 85%, 26%);
+  --text-color: hsl(14, 65%, 9%);
+  --text-light: hsl(12, 20%, 44%);
+  --background-light: hsl(13, 31%, 94%);
+  --background: hsl(7, 20%, 60%);
+  /*--background-light: hsl(14, 25%, 72%);*/
+  --back-cart: hsl(20, 50%, 98%);
+}
+
+body {
+  font-family: 'RedHatText-Regular', sans-serif;
+  font-weight: normal;
+  background-color: var(--background-light);
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.bold {
+  font-family: 'Red Hat Text-Bold', sans-serif;
+}
+
+.semi-bold {
+  font-family: 'Red Hat Text-SemiBold', sans-serif;
+}
+
+.visabily-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.app-container {
+  display: flex;
+  margin-top: 50px;
+}
+
+/*Product*/
+.product-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: var(--text-color);
+}
+
+.product-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.product-card {}
+
+.product-card .card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.product-card .card-button {
+  padding: 10px 20px;
+  padding-left: 50px;
+  border-radius: 20px;
+  border: 1px solid var(--background);
+  background: url('/public/images/icon-add-to-cart.svg') 25px 50%/20px no-repeat var(--back-cart);
+  position: relative;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+
+.product-card .card-button:hover {
+  background-color: var(--background);
+}
+
+.product-card .card-title {
+  margin-bottom: 10px;
+  color: var(--text-light);
+}
+
+.product-card .card-desc {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.product-card .card-price {
+  color: var(--accent-color);
+}
