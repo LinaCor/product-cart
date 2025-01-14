@@ -115,7 +115,6 @@ h6 {
   --text-light: hsl(12, 20%, 44%);
   --background-light: hsl(13, 31%, 94%);
   --background: hsl(7, 20%, 60%);
-  /*--background-light: hsl(14, 25%, 72%);*/
   --back-cart: hsl(20, 50%, 98%);
 }
 
@@ -161,6 +160,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin: 50px;
 }
 
@@ -206,8 +206,8 @@ body {
 }
 
 .product-card .card-button:hover {
-  border: 1px solid var(--accent-hover);
-  background-color: var(--accent-hover);
+  border: 1px solid var(--background);
+  background-color: var(--background);
 }
 
 .product-card .card-button__add {
@@ -255,11 +255,10 @@ body {
   color: var(--accent-color);
 }
 
-/*cart*/
+/*cart empty*/
 
 .cart {
   width: 27%;
-  height: 300px;
   padding: 20px;
   background-color: var(--back-cart);
   border-radius: 15px;
@@ -273,4 +272,91 @@ body {
 .cart-empty {
   text-align: center;
   color: var(--text-light);
+}
+
+/*cart order*/
+
+.order-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--background-light);
+}
+
+.item-text p:first-child {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.item-text .cost {
+  color: var(--accent-color);
+}
+
+.item-text .cost span {
+  padding: 0 10px;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.order-list li button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--background);
+}
+
+.order-list li button:hover {
+  background-color: var(--background);
+}
+
+.order-list li button:hover svg path {
+  fill: var(--background-light);
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: var(--text-light);
+}
+
+.order-total p:last-child {
+  font-size: 22px;
+  color: var(--text-color);
+}
+
+.order-shield {
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: var(--background-light);
+  position: relative;
+}
+
+.order-shield p::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('/public/images/icon-carbon-neutral.svg');
+}
+
+.order-btn {
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 30px;
+  color: var(--background-light);
+  background-color: var(--accent-color);
+  transition: 0.8s;
+}
+
+.order-btn:hover {
+  background-color: var(--accent-hover);
 }
