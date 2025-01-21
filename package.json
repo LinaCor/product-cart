@@ -1,7 +1,7 @@
 {
   "name": "next-form",
   "version": "0.1.0",
-  "homepage": "https://LinaCor.github.io/step-form",
+  "homepage": "https://LinaCor.github.io/product-cart",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
