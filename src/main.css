@@ -211,6 +211,7 @@ body {
 }
 
 .product-card .card-button__add {
+  max-height: 40px;
   display: flex;
   justify-content: space-between;
   color: var(--back-cart);
@@ -275,6 +276,11 @@ body {
 }
 
 /*cart order*/
+
+.cart-order .order-list {
+  max-height: 250px;
+  overflow-y: auto;
+}
 
 .order-list li {
   display: flex;

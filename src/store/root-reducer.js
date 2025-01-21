@@ -1,8 +1,6 @@
 import { combineReducers } from "redux";
-//import { stepReducer } from "./step/step-reducer";
-//import { formReducer } from "./form/form-reducer";
+import { addCakeReducer } from "./add-cake/add-cake-reducer";
 
-//export const rootReducer = combineReducers({
-//  step: stepReducer,
-//  form: formReducer,
-//});
+export const rootReducer = combineReducers({
+  cakeList: addCakeReducer,
+});

@@ -10,7 +10,7 @@ function App() {
       <div className="app-container">
         <ProductContainer />
         <CartContainer />
-        <OrderPopup />
+        {/*<OrderPopup />*/}
       </div>
     </div>
   );

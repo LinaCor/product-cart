@@ -3,7 +3,7 @@ export const cakes = [
     id: '59dh',
     title: 'Waffle',
     desc: 'Waffle with Berries',
-    price: '6.50',
+    price: 6.5,
     image: {
       thumbnail: "/images/image-waffle-thumbnail.jpg",
       mobile: "/images/image-waffle-mobile.jpg",
@@ -15,7 +15,7 @@ export const cakes = [
     id: '30pe',
     title: 'Crème Brûlée',
     desc: 'Vanilla Bean Crème Brûlée',
-    price: '7.00',
+    price: 7,
     image: {
       thumbnail: "/images/image-creme-brulee-thumbnail.jpg",
       mobile: "/images/image-creme-brulee-mobile.jpg",
@@ -27,7 +27,7 @@ export const cakes = [
     id: '41im',
     title: 'Macaron',
     desc: 'Macaron Mix of Five',
-    price: '8.00',
+    price: 8,
     image: {
       thumbnail: "/images/image-macaron-thumbnail.jpg",
       mobile: "/images/image-macaron-mobile.jpg",
@@ -39,7 +39,7 @@ export const cakes = [
     id: '87ws',
     title: 'Tiramisu',
     desc: 'Classic Tiramisu',
-    price: '5.50',
+    price: 5.5,
     image: {
       thumbnail: "/images/image-tiramisu-thumbnail.jpg",
       mobile: "/images/image-tiramisu-mobile.jpg",
@@ -51,7 +51,7 @@ export const cakes = [
     id: '72hw',
     title: 'Baklava',
     desc: 'Pistachio Baklava',
-    price: '4.00',
+    price: 4,
     image: {
       thumbnail: "/images/image-baklava-thumbnail.jpg",
       mobile: "/images/image-baklava-mobile.jpg",
@@ -63,7 +63,7 @@ export const cakes = [
     id: '93jq',
     title: 'Pie',
     desc: 'Lemon Meringue Pie',
-    price: '5.00',
+    price: 5,
     image: {
       thumbnail: "/images/image-meringue-thumbnail.jpg",
       mobile: "/images/image-meringue-mobile.jpg",
@@ -75,7 +75,7 @@ export const cakes = [
     id: '64ie',
     title: 'Cake',
     desc: 'Red Velvet Cake',
-    price: '4.50',
+    price: 4.5,
     image: {
       thumbnail: "/images/image-cake-thumbnail.jpg",
       mobile: "/images/image-cake-mobile.jpg",
@@ -87,7 +87,7 @@ export const cakes = [
     id: '63ha',
     title: 'Brownie',
     desc: 'Salted Caramel Brownie',
-    price: '4.50',
+    price: 4.5,
     image: {
       thumbnail: "/images/image-brownie-thumbnail.jpg",
       mobile: "/images/image-brownie-mobile.jpg",
@@ -99,7 +99,7 @@ export const cakes = [
     id: '82kq',
     title: 'Panna Cotta',
     desc: 'Vanilla Panna Cotta',
-    price: '6.50',
+    price: 6.5,
     image: {
       thumbnail: "/images/image-panna-cotta-thumbnail.jpg",
       mobile: "/images/image-panna-cotta-mobile.jpg",
