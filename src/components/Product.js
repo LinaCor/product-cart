@@ -1,26 +1,32 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCard, changeMore, changeLess } from '../store/add-cake/add-cake-actions';
+import { addToCard, changeMore, changeLess, deleteCake } from '../store/add-cake/add-cake-actions';
 import { isCakeInBasket } from '../store/add-cake/add-cake-selector';
 import '../main.css';
 
-export function Product({ id, title, desc, price, image, quantity }) {
+
+export function Product({ id, title, desc, price, image }) {
   const isCake = useSelector(isCakeInBasket);
+  const filteredArr = isCake.find(el => el.id === id);
+
   const dispatch = useDispatch();
 
+  const handleDelete = () => {
+    filteredArr.quantity === 1 ? dispatch(deleteCake(id)) : dispatch(changeLess(id));
+  }
 
   return (
     <div className="product-card">
       <img className="card-img" src={`${process.env.PUBLIC_URL}${image.desktop}`} alt={title} />
-      {isCake.find(el => el.id === id) ?
+      {filteredArr?.quantity > 0 ?
         <div className="card-button__add semi-bold">
           <button
             className="add-decrement"
-            onClick={() => dispatch(changeLess(id))}
+            onClick={handleDelete}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2" className="svg-icon"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z" />
             </svg>
           </button>
-          <p className="add-count">1</p>
+          <p className="add-count">{filteredArr.quantity}</p>
           <button
             className="add-incriment"
             onClick={() => dispatch(changeMore(id))}

@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { isCakeInBasket } from '../store/add-cake/add-cake-selector';
 import { deleteCake } from '../store/add-cake/add-cake-actions';
+import { orderOpen } from '../store/order/order-action';
 import '../main.css';
 
 export function CartContainer() {
@@ -10,7 +11,7 @@ export function CartContainer() {
 
   return (
     <div className="cart">
-      <h2 className="bold">You Cart(0)</h2>
+      <h2 className="bold">You Cart({isCake.length})</h2>
       {isCake.length > 0 ?
         <div className="cart-order">
           <ul className="order-list">
@@ -33,7 +34,10 @@ export function CartContainer() {
           <div className="order-shield">
             <p className="fs-14">This is a <b>carbon-neutral</b> delivery</p>
           </div>
-          <button className="order-btn">Confirm Order</button>
+          <button
+            className="order-btn"
+            onClick={() => dispatch(orderOpen)}
+          >Confirm Order</button>
         </div>
         :
         <div className="cart-empty">

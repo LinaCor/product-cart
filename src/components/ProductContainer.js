@@ -2,6 +2,7 @@ import '../main.css';
 import { Product } from './Product';
 import { cakes } from '../data';
 
+
 export function ProductContainer() {
   return (
     <div className="product">
