@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/product-cart/static/css/main.34fbe43e.css",
+    "main.js": "/product-cart/static/js/main.30602643.js",
+    "static/media/RedHatText-Regular.ttf": "/product-cart/static/media/RedHatText-Regular.1114e0c17a9d15f2014a.ttf",
+    "static/media/RedHatText-SemiBold.ttf": "/product-cart/static/media/RedHatText-SemiBold.50846cf1a3346a806070.ttf",
+    "static/media/RedHatText-Bold.ttf": "/product-cart/static/media/RedHatText-Bold.710fa6829252d684327b.ttf",
+    "static/media/icon-carbon-neutral.svg": "/product-cart/static/media/icon-carbon-neutral.13953e5e1e4c166b4acd.svg",
+    "static/media/icon-add-to-cart.svg": "/product-cart/static/media/icon-add-to-cart.12141fdf0da9c38c6421.svg",
+    "index.html": "/product-cart/index.html",
+    "main.34fbe43e.css.map": "/product-cart/static/css/main.34fbe43e.css.map",
+    "main.30602643.js.map": "/product-cart/static/js/main.30602643.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34fbe43e.css",
+    "static/js/main.30602643.js"
+  ]
+}
