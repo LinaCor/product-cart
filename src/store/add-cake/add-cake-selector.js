@@ -1,0 +1,1 @@
+export const isCakeInBasket = (state) => state.cakeList;
